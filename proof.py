@@ -1,7 +1,7 @@
 from google.cloud import documentai
 
-proofing_processor_name = "projects/645805466797/locations/us/processors/4c8c76125c6d3070"
-us_driver_processor_name = "projects/645805466797/locations/us/processors/caaa6f3b9967609c"
+proofing_processor_name = "projects/{PROJECT_NUMBER}/locations/{LOCATION}/processors/{PROCESSOR_ID}"
+us_driver_processor_name = "projects/{PROJECT_NUMBER}/locations/{LOCATION}/processors/{PROCESSOR_ID}"
 
 def proof_request(image_bytes: bytes = b"", mime_type: str = ""):
     client = documentai.DocumentProcessorServiceClient()
